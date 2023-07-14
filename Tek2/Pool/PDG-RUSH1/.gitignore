@@ -1,0 +1,7 @@
+*.o
+*.hi
+*.test
+pushswap_checker
+bubble_sort
+coding-style-reports.log
+coding-style.sh

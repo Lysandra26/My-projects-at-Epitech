@@ -1,0 +1,6 @@
+*.o
+libstring.a
+a.out
+.vscode
+coding-style-reports.log
+ex06.c
