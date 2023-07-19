@@ -1,0 +1,139 @@
+\hypertarget{classIDisplayModule}{}\doxysection{IDisplay\+Module Class Reference}
+\label{classIDisplayModule}\index{IDisplayModule@{IDisplayModule}}
+Inheritance diagram for IDisplay\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIDisplayModule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_adbf1dea72f7987bad3a7e6feaedb97a6}{create\+Window}} (unsigned int width, unsigned int height, const std\+::string \&title)=0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ac2f1ec4c02f77d03e50eb509d591e1b8}{destroy\+Window}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ad2572a5cce2065ac2772153b7056a1b7}{clear}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_aaf7ff249d42d931fc286f6624e7dbcc5}{display}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a8f7fec358c99ed35a9118c8a815cd8cc}{draw\+Rectangle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, \mbox{\hyperlink{structVector2f}{Vector2f}} size, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a74f84240da5380d6ba89f30ea29be840}{draw\+Circle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, float radius, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ac68ec634c972086ed38ea5a93cebba63}{draw\+Text}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, const std\+::string \&text, unsigned int size, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a64d8df255f580396ace29224b4676795}{draw\+Sprite}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, const std\+::string \&path) const =0
+\item 
+virtual bool \mbox{\hyperlink{classIDisplayModule_a939107266bbb08eb1d84f37914dcada4}{is\+Open}} () const =0
+\item 
+virtual Input \mbox{\hyperlink{classIDisplayModule_a92a6a25a88a8d0d2f5234d092a2cf674}{get\+Input}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIDisplayModule_ad2572a5cce2065ac2772153b7056a1b7}\label{classIDisplayModule_ad2572a5cce2065ac2772153b7056a1b7} 
+\index{IDisplayModule@{IDisplayModule}!clear@{clear}}
+\index{clear@{clear}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Ncurses_a6142c3ab89a8c4e0e04b06a9c032e835}{Arcade\+::\+Ncurses}}, \mbox{\hyperlink{classArcade_1_1SDL2_a91116e8eecd648c031e19992ebc145be}{Arcade\+::\+SDL2}}, and \mbox{\hyperlink{classArcade_1_1Sfml_a129e7068d4411b9b238c5c52e0b98a33}{Arcade\+::\+Sfml}}.
+
+\Hypertarget{classIDisplayModule_adbf1dea72f7987bad3a7e6feaedb97a6}\label{classIDisplayModule_adbf1dea72f7987bad3a7e6feaedb97a6} 
+\index{IDisplayModule@{IDisplayModule}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::create\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height,  }\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Ncurses_a17e23b029b82f89c9a65241496a733ab}{Arcade\+::\+Ncurses}}, \mbox{\hyperlink{classArcade_1_1SDL2_a73ec256a9c24780ddda269e41e28770d}{Arcade\+::\+SDL2}}, and \mbox{\hyperlink{classArcade_1_1Sfml_af5e9412167257b34b758d65148ab3cb9}{Arcade\+::\+Sfml}}.
+
+\Hypertarget{classIDisplayModule_ac2f1ec4c02f77d03e50eb509d591e1b8}\label{classIDisplayModule_ac2f1ec4c02f77d03e50eb509d591e1b8} 
+\index{IDisplayModule@{IDisplayModule}!destroyWindow@{destroyWindow}}
+\index{destroyWindow@{destroyWindow}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{destroyWindow()}{destroyWindow()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::destroy\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Ncurses_a5588703ce4a6720d518d66c8bdd35cbe}{Arcade\+::\+Ncurses}}, \mbox{\hyperlink{classArcade_1_1SDL2_a757d1285cd8a9fd95beb4e48e1c65642}{Arcade\+::\+SDL2}}, and \mbox{\hyperlink{classArcade_1_1Sfml_aeb3120ef000d68f8de3df2daadda1ba8}{Arcade\+::\+Sfml}}.
+
+\Hypertarget{classIDisplayModule_aaf7ff249d42d931fc286f6624e7dbcc5}\label{classIDisplayModule_aaf7ff249d42d931fc286f6624e7dbcc5} 
+\index{IDisplayModule@{IDisplayModule}!display@{display}}
+\index{display@{display}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Ncurses_a80f95b8164ccac0526b4f8303347ef8e}{Arcade\+::\+Ncurses}}, \mbox{\hyperlink{classArcade_1_1SDL2_a8ff9301fdeda2e54e586c41890619d4d}{Arcade\+::\+SDL2}}, and \mbox{\hyperlink{classArcade_1_1Sfml_ad8a7e6021a2a3bb87e1cf5800dae8c82}{Arcade\+::\+Sfml}}.
+
+\Hypertarget{classIDisplayModule_a74f84240da5380d6ba89f30ea29be840}\label{classIDisplayModule_a74f84240da5380d6ba89f30ea29be840} 
+\index{IDisplayModule@{IDisplayModule}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::draw\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{position,  }\item[{float}]{radius,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Sfml_aa8b54b4fccf5ca1de43697155adf4d7a}{Arcade\+::\+Sfml}}, \mbox{\hyperlink{classArcade_1_1Ncurses_a58e39a557db4ec74ef18ae29dd36f613}{Arcade\+::\+Ncurses}}, and \mbox{\hyperlink{classArcade_1_1SDL2_a3b55e6971c4dc2a36cc155becf24becd}{Arcade\+::\+SDL2}}.
+
+\Hypertarget{classIDisplayModule_a8f7fec358c99ed35a9118c8a815cd8cc}\label{classIDisplayModule_a8f7fec358c99ed35a9118c8a815cd8cc} 
+\index{IDisplayModule@{IDisplayModule}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{position,  }\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{size,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Ncurses_a42ec7117a56cbcdd51ce74481ee2b9ff}{Arcade\+::\+Ncurses}}, and \mbox{\hyperlink{classArcade_1_1SDL2_a276e93c7387922919619c0636c58ac71}{Arcade\+::\+SDL2}}.
+
+\Hypertarget{classIDisplayModule_a64d8df255f580396ace29224b4676795}\label{classIDisplayModule_a64d8df255f580396ace29224b4676795} 
+\index{IDisplayModule@{IDisplayModule}!drawSprite@{drawSprite}}
+\index{drawSprite@{drawSprite}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawSprite()}{drawSprite()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::draw\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{position,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Sfml_ae4250a9041c18afa21145ec326dc4051}{Arcade\+::\+Sfml}}, \mbox{\hyperlink{classArcade_1_1Ncurses_a40bf2f542024e08a3b951f40069330a4}{Arcade\+::\+Ncurses}}, and \mbox{\hyperlink{classArcade_1_1SDL2_a1d44bad23da702eb986136ee86e329bf}{Arcade\+::\+SDL2}}.
+
+\Hypertarget{classIDisplayModule_ac68ec634c972086ed38ea5a93cebba63}\label{classIDisplayModule_ac68ec634c972086ed38ea5a93cebba63} 
+\index{IDisplayModule@{IDisplayModule}!drawText@{drawText}}
+\index{drawText@{drawText}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily virtual void IDisplay\+Module\+::draw\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{position,  }\item[{const std\+::string \&}]{text,  }\item[{unsigned int}]{size,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Sfml_aab0ca119b57ca26ff491079212cf9288}{Arcade\+::\+Sfml}}, \mbox{\hyperlink{classArcade_1_1Ncurses_a0eea086414c07a9ebb94ebb4c732e0da}{Arcade\+::\+Ncurses}}, and \mbox{\hyperlink{classArcade_1_1SDL2_ac4c196bd3ebc160a6111d025726a7078}{Arcade\+::\+SDL2}}.
+
+\Hypertarget{classIDisplayModule_a92a6a25a88a8d0d2f5234d092a2cf674}\label{classIDisplayModule_a92a6a25a88a8d0d2f5234d092a2cf674} 
+\index{IDisplayModule@{IDisplayModule}!getInput@{getInput}}
+\index{getInput@{getInput}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily virtual Input IDisplay\+Module\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classArcade_1_1SDL2_a3aca2109316a8218efc13aec3e7935c4}{Arcade\+::\+SDL2}}, and \mbox{\hyperlink{classArcade_1_1Sfml_ae0aac79e4feff37b6d802c3c03ecc139}{Arcade\+::\+Sfml}}.
+
+\Hypertarget{classIDisplayModule_a939107266bbb08eb1d84f37914dcada4}\label{classIDisplayModule_a939107266bbb08eb1d84f37914dcada4} 
+\index{IDisplayModule@{IDisplayModule}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!IDisplayModule@{IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily virtual bool IDisplay\+Module\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1SDL2_a8e8d45ca5ac5d1b99eebc9d384abe312}{Arcade\+::\+SDL2}}, \mbox{\hyperlink{classArcade_1_1Sfml_a7a13df2f10be1ff2821419ae5d39a35b}{Arcade\+::\+Sfml}}, and \mbox{\hyperlink{classArcade_1_1Ncurses_ada349cc4ce8f5d1d086984d122c86b57}{Arcade\+::\+Ncurses}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/include/\+Libs/IDisplay\+Module.\+hpp\end{DoxyCompactItemize}

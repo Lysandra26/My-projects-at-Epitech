@@ -1,0 +1,30 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X         O              MMMMMMMMMX
+X                         O  MMMMMX
+X    MMMMMMMMMM                   X
+X         M                       X
+X     O   M                       X
+X         M                       X
+X         M         MMMMMMM       X
+X         M                       X
+X                                 X
+X                     O    M      X
+X                          M      X
+X    MMM                   M      X
+X                                 X
+X  O           MMMMMMMM       O   X
+X    M                            X
+X    M                            X
+X    M             M              X
+X    M      O      M              X
+X                  M              X
+X                  M  O           X
+X                  M              X
+X                                 X
+X     MMMM                        X
+X                           M     X
+X                       O   M     X
+X       M                   M     X
+X   O              MMMMMMMMMM     X
+X                                OX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

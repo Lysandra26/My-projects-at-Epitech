@@ -1,0 +1,45 @@
+\hypertarget{Sfml_8hpp_source}{}\doxysection{Sfml.\+hpp}
+\label{Sfml_8hpp_source}\index{/home/edgarflc/Epitech/B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou/include/Libs/SFML/Sfml.hpp@{/home/edgarflc/Epitech/B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou/include/Libs/SFML/Sfml.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2022}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Sfml.hpp}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../IDisplayModule.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Arcade}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classArcade_1_1Sfml}{Sfml}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classIDisplayModule}{IDisplayModule}}}
+\DoxyCodeLine{00016\ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArcade_1_1Sfml_afc94dd00668abbb70280043877f0ae0d}{Sfml}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classArcade_1_1Sfml_ac42cb3dab5b02dc483c5e333718019d5}{\string~Sfml}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_af5e9412167257b34b758d65148ab3cb9}{createWindow}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ std::string\ \&title)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_aeb3120ef000d68f8de3df2daadda1ba8}{destroyWindow}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_a129e7068d4411b9b238c5c52e0b98a33}{clear}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_ad8a7e6021a2a3bb87e1cf5800dae8c82}{display}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ drawRectangle(\mbox{\hyperlink{structVector2f}{Vector2f}}\ pos,\ \mbox{\hyperlink{structVector2f}{Vector2f}}\ size,\ Color\ color)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_aa8b54b4fccf5ca1de43697155adf4d7a}{drawCircle}}(\mbox{\hyperlink{structVector2f}{Vector2f}}\ pos,\ \textcolor{keywordtype}{float}\ radius,\ Color\ color)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_aab0ca119b57ca26ff491079212cf9288}{drawText}}(\mbox{\hyperlink{structVector2f}{Vector2f}}\ pos,\ \textcolor{keyword}{const}\ std::string\ \&text,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ size,\ Color\ color)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_1_1Sfml_ae4250a9041c18afa21145ec326dc4051}{drawSprite}}(\mbox{\hyperlink{structVector2f}{Vector2f}}\ pos,\ \textcolor{keyword}{const}\ std::string\ \&path)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classArcade_1_1Sfml_a7a13df2f10be1ff2821419ae5d39a35b}{isOpen}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ Input\ \mbox{\hyperlink{classArcade_1_1Sfml_ae0aac79e4feff37b6d802c3c03ecc139}{getInput}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ sf::RenderWindow\ m\_window;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color\ getColor(Color\ color)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \mbox{\hyperlink{classIDisplayModule}{IDisplayModule}}\ *entryPoint();}
+\DoxyCodeLine{00039\ \}}
+
+\end{DoxyCode}

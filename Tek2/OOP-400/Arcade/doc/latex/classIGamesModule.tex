@@ -1,0 +1,142 @@
+\hypertarget{classIGamesModule}{}\doxysection{IGames\+Module Class Reference}
+\label{classIGamesModule}\index{IGamesModule@{IGamesModule}}
+Inheritance diagram for IGames\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIGamesModule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_aec376cd5fd7c6f26c719750f41bd0bb7}{init}} (\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$graphics, std\+::string player\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a11677299835477a508f0012fb659a765}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_ae5c3e1f5329bef82b5945d64cc412969}{handle\+Input}} (Input input)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_afaa0981bb80e364717279f5629d8ccca}{render}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGamesModule_a6c290d39074045efa50080c0a9b95c48}{get\+Name}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_a229759676defb274dab0e6c29a30e0ff}{get\+Current\+Score}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_ae2a78a4653395b5892f0a785ce8d5ca1}{get\+High\+Score}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a8baf1b44353550f5d707a599b539ea6e}{set\+State}} (Game\+State state)=0
+\item 
+virtual Game\+State \mbox{\hyperlink{classIGamesModule_a3f0adcbebdc1314041d2c99351fe865c}{get\+State}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f}\label{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f} 
+Game\+State {\bfseries \+\_\+state} = Game\+State\+::\+PAUSED
+\item 
+\Hypertarget{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193}\label{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193} 
+unsigned int {\bfseries \+\_\+current\+Score}
+\item 
+\Hypertarget{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c}\label{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c} 
+unsigned int {\bfseries \+\_\+high\+Score}
+\item 
+\Hypertarget{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652}\label{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652} 
+\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$ {\bfseries \+\_\+graphical}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIGamesModule_a229759676defb274dab0e6c29a30e0ff}\label{classIGamesModule_a229759676defb274dab0e6c29a30e0ff} 
+\index{IGamesModule@{IGamesModule}!getCurrentScore@{getCurrentScore}}
+\index{getCurrentScore@{getCurrentScore}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{getCurrentScore()}{getCurrentScore()}}
+{\footnotesize\ttfamily virtual unsigned int IGames\+Module\+::get\+Current\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_af12ee1ae0f1ab33d16f25d2ec418efd4}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a60b674a0c5f3ca2311d8091c31ab5fc6}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_ae2a78a4653395b5892f0a785ce8d5ca1}\label{classIGamesModule_ae2a78a4653395b5892f0a785ce8d5ca1} 
+\index{IGamesModule@{IGamesModule}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{getHighScore()}{getHighScore()}}
+{\footnotesize\ttfamily virtual unsigned int IGames\+Module\+::get\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a3b12fdc5510a4bb4aadd4a26ed17485c}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a34a52f740244a537b04672709dc23827}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_a6c290d39074045efa50080c0a9b95c48}\label{classIGamesModule_a6c290d39074045efa50080c0a9b95c48} 
+\index{IGamesModule@{IGamesModule}!getName@{getName}}
+\index{getName@{getName}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string IGames\+Module\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a8e156b4d281ae248258cd045900b21f8}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a52d89c929b7afcb1dcc3d214c3551924}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_a3f0adcbebdc1314041d2c99351fe865c}\label{classIGamesModule_a3f0adcbebdc1314041d2c99351fe865c} 
+\index{IGamesModule@{IGamesModule}!getState@{getState}}
+\index{getState@{getState}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual Game\+State IGames\+Module\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a34556f54f59d1eca725fe39c76f71a4b}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a5c377487587400bd40eba0a33cd37c59}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_ae5c3e1f5329bef82b5945d64cc412969}\label{classIGamesModule_ae5c3e1f5329bef82b5945d64cc412969} 
+\index{IGamesModule@{IGamesModule}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily virtual void IGames\+Module\+::handle\+Input (\begin{DoxyParamCaption}\item[{Input}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a8e653aa953b5a419f475917ffb6f822d}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_ad799cc5f0b8a13e1e9fe79d5a66361aa}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_aec376cd5fd7c6f26c719750f41bd0bb7}\label{classIGamesModule_aec376cd5fd7c6f26c719750f41bd0bb7} 
+\index{IGamesModule@{IGamesModule}!init@{init}}
+\index{init@{init}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void IGames\+Module\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$}]{graphics,  }\item[{std\+::string}]{player\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a8ed0cc1c2139af3e29993f8e487dcfc1}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_ab95def2b35320d6c0ef2f76924420725}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_afaa0981bb80e364717279f5629d8ccca}\label{classIGamesModule_afaa0981bb80e364717279f5629d8ccca} 
+\index{IGamesModule@{IGamesModule}!render@{render}}
+\index{render@{render}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void IGames\+Module\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a72cb312b187db0bc306f1a4b323a4d79}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a34243ee8412cf27e981ec0ea83768a19}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_a8baf1b44353550f5d707a599b539ea6e}\label{classIGamesModule_a8baf1b44353550f5d707a599b539ea6e} 
+\index{IGamesModule@{IGamesModule}!setState@{setState}}
+\index{setState@{setState}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily virtual void IGames\+Module\+::set\+State (\begin{DoxyParamCaption}\item[{Game\+State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_ab575f195ae0bbedb2de4fec3994e5790}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a9cc9db2ffefe6cbdaa1c447efc67bbb7}{Arcade\+::\+Snake}}.
+
+\Hypertarget{classIGamesModule_a11677299835477a508f0012fb659a765}\label{classIGamesModule_a11677299835477a508f0012fb659a765} 
+\index{IGamesModule@{IGamesModule}!update@{update}}
+\index{update@{update}!IGamesModule@{IGamesModule}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void IGames\+Module\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArcade_1_1Nibbler_a85624ce0ac4970d904933f7aadb81000}{Arcade\+::\+Nibbler}}, and \mbox{\hyperlink{classArcade_1_1Snake_a609165f1482aed55cf891faf9882a543}{Arcade\+::\+Snake}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/include/\+Games/IGames\+Module.\+hpp\end{DoxyCompactItemize}

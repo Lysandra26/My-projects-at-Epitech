@@ -1,0 +1,250 @@
+\hypertarget{classArcade_1_1Nibbler}{}\doxysection{Arcade\+::Nibbler Class Reference}
+\label{classArcade_1_1Nibbler}\index{Arcade::Nibbler@{Arcade::Nibbler}}
+Inheritance diagram for Arcade\+::Nibbler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArcade_1_1Nibbler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArcade_1_1Nibbler_a6067e8961c86559597040dbb7ee6a811}{Nibbler}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classArcade_1_1Nibbler}{Nibbler} object. \end{DoxyCompactList}\item 
+\Hypertarget{classArcade_1_1Nibbler_ae02285662ae3eb2fdb8a4d68c2f96108}\label{classArcade_1_1Nibbler_ae02285662ae3eb2fdb8a4d68c2f96108} 
+{\bfseries $\sim$\+Nibbler} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{classArcade_1_1Nibbler}{Nibbler} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Nibbler_a8ed0cc1c2139af3e29993f8e487dcfc1}{init}} (\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$graphics, std\+::string player\+Name) override
+\begin{DoxyCompactList}\small\item\em Initialize the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Nibbler_a85624ce0ac4970d904933f7aadb81000}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Nibbler_a8e653aa953b5a419f475917ffb6f822d}{handle\+Input}} (Input input) override
+\begin{DoxyCompactList}\small\item\em Handle the input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Nibbler_a72cb312b187db0bc306f1a4b323a4d79}{render}} () override
+\begin{DoxyCompactList}\small\item\em Render the game. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classArcade_1_1Nibbler_a8e156b4d281ae248258cd045900b21f8}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Name of the player. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classArcade_1_1Nibbler_af12ee1ae0f1ab33d16f25d2ec418efd4}{get\+Current\+Score}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Current Score of the player. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classArcade_1_1Nibbler_a3b12fdc5510a4bb4aadd4a26ed17485c}{get\+High\+Score}} () const override
+\begin{DoxyCompactList}\small\item\em Get the High Score of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Nibbler_ab575f195ae0bbedb2de4fec3994e5790}{set\+State}} (Game\+State state) override
+\begin{DoxyCompactList}\small\item\em Set the State of the game. \end{DoxyCompactList}\item 
+Game\+State \mbox{\hyperlink{classArcade_1_1Nibbler_a34556f54f59d1eca725fe39c76f71a4b}{get\+State}} () const override
+\begin{DoxyCompactList}\small\item\em Get the State of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_aec376cd5fd7c6f26c719750f41bd0bb7}{init}} (\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$graphics, std\+::string player\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a11677299835477a508f0012fb659a765}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_ae5c3e1f5329bef82b5945d64cc412969}{handle\+Input}} (Input input)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_afaa0981bb80e364717279f5629d8ccca}{render}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGamesModule_a6c290d39074045efa50080c0a9b95c48}{get\+Name}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_a229759676defb274dab0e6c29a30e0ff}{get\+Current\+Score}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_ae2a78a4653395b5892f0a785ce8d5ca1}{get\+High\+Score}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a8baf1b44353550f5d707a599b539ea6e}{set\+State}} (Game\+State state)=0
+\item 
+virtual Game\+State \mbox{\hyperlink{classIGamesModule_a3f0adcbebdc1314041d2c99351fe865c}{get\+State}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f}\label{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f} 
+Game\+State {\bfseries \+\_\+state} = Game\+State\+::\+PAUSED
+\item 
+\Hypertarget{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193}\label{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193} 
+unsigned int {\bfseries \+\_\+current\+Score}
+\item 
+\Hypertarget{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c}\label{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c} 
+unsigned int {\bfseries \+\_\+high\+Score}
+\item 
+\Hypertarget{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652}\label{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652} 
+\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$ {\bfseries \+\_\+graphical}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classArcade_1_1Nibbler_a6067e8961c86559597040dbb7ee6a811}\label{classArcade_1_1Nibbler_a6067e8961c86559597040dbb7ee6a811} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!Nibbler@{Nibbler}}
+\index{Nibbler@{Nibbler}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{Nibbler()}{Nibbler()}}
+{\footnotesize\ttfamily Arcade\+::\+Nibbler\+::\+Nibbler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classArcade_1_1Nibbler}{Nibbler} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classArcade_1_1Nibbler_af12ee1ae0f1ab33d16f25d2ec418efd4}\label{classArcade_1_1Nibbler_af12ee1ae0f1ab33d16f25d2ec418efd4} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!getCurrentScore@{getCurrentScore}}
+\index{getCurrentScore@{getCurrentScore}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{getCurrentScore()}{getCurrentScore()}}
+{\footnotesize\ttfamily unsigned int Arcade\+::\+Nibbler\+::get\+Current\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Current Score of the player. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int The current score of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a3b12fdc5510a4bb4aadd4a26ed17485c}\label{classArcade_1_1Nibbler_a3b12fdc5510a4bb4aadd4a26ed17485c} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{getHighScore()}{getHighScore()}}
+{\footnotesize\ttfamily unsigned int Arcade\+::\+Nibbler\+::get\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the High Score of the player. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int The high score of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a8e156b4d281ae248258cd045900b21f8}\label{classArcade_1_1Nibbler_a8e156b4d281ae248258cd045900b21f8} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!getName@{getName}}
+\index{getName@{getName}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Arcade\+::\+Nibbler\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Name of the player. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a34556f54f59d1eca725fe39c76f71a4b}\label{classArcade_1_1Nibbler_a34556f54f59d1eca725fe39c76f71a4b} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!getState@{getState}}
+\index{getState@{getState}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily Game\+State Arcade\+::\+Nibbler\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the State of the game. 
+
+\begin{DoxyReturn}{Returns}
+Game\+State The state of the game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a8e653aa953b5a419f475917ffb6f822d}\label{classArcade_1_1Nibbler_a8e653aa953b5a419f475917ffb6f822d} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Arcade\+::\+Nibbler\+::handle\+Input (\begin{DoxyParamCaption}\item[{Input}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a8ed0cc1c2139af3e29993f8e487dcfc1}\label{classArcade_1_1Nibbler_a8ed0cc1c2139af3e29993f8e487dcfc1} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!init@{init}}
+\index{init@{init}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Arcade\+::\+Nibbler\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$}]{graphics,  }\item[{std\+::string}]{player\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics module \\
+\hline
+{\em player\+Name} & The name of the player \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a72cb312b187db0bc306f1a4b323a4d79}\label{classArcade_1_1Nibbler_a72cb312b187db0bc306f1a4b323a4d79} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!render@{render}}
+\index{render@{render}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Arcade\+::\+Nibbler\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Render the game. 
+
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_ab575f195ae0bbedb2de4fec3994e5790}\label{classArcade_1_1Nibbler_ab575f195ae0bbedb2de4fec3994e5790} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!setState@{setState}}
+\index{setState@{setState}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Arcade\+::\+Nibbler\+::set\+State (\begin{DoxyParamCaption}\item[{Game\+State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the State of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state of the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game\+State The state of the game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Nibbler_a85624ce0ac4970d904933f7aadb81000}\label{classArcade_1_1Nibbler_a85624ce0ac4970d904933f7aadb81000} 
+\index{Arcade::Nibbler@{Arcade::Nibbler}!update@{update}}
+\index{update@{update}!Arcade::Nibbler@{Arcade::Nibbler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Arcade\+::\+Nibbler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the game. 
+
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/include/\+Games/\+Nibbler/Nibbler.\+hpp\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/src/\+Games/\+Nibbler/Nibbler.\+cpp\end{DoxyCompactItemize}

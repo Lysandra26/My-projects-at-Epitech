@@ -1,0 +1,98 @@
+\hypertarget{Utils_8hpp_source}{}\doxysection{Utils.\+hpp}
+\label{Utils_8hpp_source}\index{/home/edgarflc/Epitech/B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou/include/Utils.hpp@{/home/edgarflc/Epitech/B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou/include/Utils.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/MPL-\/4-\/1-\/arcade-\/edgar.falcou}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Utils}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ UTILS\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ UTILS\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVector2i}{Vector2i}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structVector2i}{Vector2i}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ :\ x(x),\ y(y)\ \{\};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structVector2i}{Vector2i}}()\ :\ x(0),\ y(0)\ \{\};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{structVector2i}{Vector2i}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ ==\ other.x\ \&\&\ y\ ==\ other.y);}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structVector2i}{Vector2i}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ !=\ other.x\ ||\ y\ !=\ other.y);}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVector2f}{Vector2f}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ x;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ y;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structVector2f}{Vector2f}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y)\ :\ x(x),\ y(y)\ \{\};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structVector2f}{Vector2f}}()\ :\ x(0),\ y(0)\ \{\};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{structVector2f}{Vector2f}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ ==\ other.x\ \&\&\ y\ ==\ other.y);}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structVector2f}{Vector2f}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ !=\ other.x\ ||\ y\ !=\ other.y);}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{enum}\ Color\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ BLACK,}
+\DoxyCodeLine{00047\ \ \ \ \ RED,}
+\DoxyCodeLine{00048\ \ \ \ \ GREEN,}
+\DoxyCodeLine{00049\ \ \ \ \ YELLOW,}
+\DoxyCodeLine{00050\ \ \ \ \ BLUE,}
+\DoxyCodeLine{00051\ \ \ \ \ MAGENTA,}
+\DoxyCodeLine{00052\ \ \ \ \ CYAN,}
+\DoxyCodeLine{00053\ \ \ \ \ WHITE,}
+\DoxyCodeLine{00054\ \ \ \ \ TRANSPARENT}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{enum}\ Input\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ UP,}
+\DoxyCodeLine{00059\ \ \ \ \ DOWN,}
+\DoxyCodeLine{00060\ \ \ \ \ LEFT,}
+\DoxyCodeLine{00061\ \ \ \ \ RIGHT,}
+\DoxyCodeLine{00062\ \ \ \ \ SPACE,}
+\DoxyCodeLine{00063\ \ \ \ \ ESCAPE,}
+\DoxyCodeLine{00064\ \ \ \ \ ENTER,}
+\DoxyCodeLine{00065\ \ \ \ \ Z,}
+\DoxyCodeLine{00066\ \ \ \ \ Q,}
+\DoxyCodeLine{00067\ \ \ \ \ S,}
+\DoxyCodeLine{00068\ \ \ \ \ D,}
+\DoxyCodeLine{00069\ \ \ \ \ A,}
+\DoxyCodeLine{00070\ \ \ \ \ E,}
+\DoxyCodeLine{00071\ \ \ \ \ BACKSPACE,}
+\DoxyCodeLine{00072\ \ \ \ \ NONE}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLib}{Lib}}\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ std::string\ sdl2\ =\ \textcolor{stringliteral}{"{}arcade\_sdl2.so"{}};}
+\DoxyCodeLine{00077\ \ \ \ \ std::string\ ncurses\ =\ \textcolor{stringliteral}{"{}arcade\_ncurses.so"{}};}
+\DoxyCodeLine{00078\ \ \ \ \ std::string\ sfml\ =\ \textcolor{stringliteral}{"{}arcade\_sfml.so"{}};}
+\DoxyCodeLine{00079\ \ \ \ \ std::string\ libcaca\ =\ \textcolor{stringliteral}{"{}arcade\_libcaca.so"{}};}
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ allegro5\ =\ \textcolor{stringliteral}{"{}arcade\_allegro5.so"{}};}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structGame}{Game}}\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ std::string\ snake\ =\ \textcolor{stringliteral}{"{}arcade\_snake.so"{}};}
+\DoxyCodeLine{00085\ \ \ \ \ std::string\ nibbler\ =\ \textcolor{stringliteral}{"{}arcade\_nibbler.so"{}};}
+\DoxyCodeLine{00086\ \ \ \ \ std::string\ pacman\ =\ \textcolor{stringliteral}{"{}arcade\_pacman.so"{}};}
+\DoxyCodeLine{00087\ \ \ \ \ std::string\ qix\ =\ \textcolor{stringliteral}{"{}arcade\_qix.so"{}};}
+\DoxyCodeLine{00088\ \ \ \ \ std::string\ centipede\ =\ \textcolor{stringliteral}{"{}arcade\_centipede.so"{}};}
+\DoxyCodeLine{00089\ \ \ \ \ std::string\ solarfox\ =\ \textcolor{stringliteral}{"{}arcade\_solarfox.so"{}};}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !UTILS\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

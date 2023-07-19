@@ -1,0 +1,250 @@
+\hypertarget{classArcade_1_1Snake}{}\doxysection{Arcade\+::Snake Class Reference}
+\label{classArcade_1_1Snake}\index{Arcade::Snake@{Arcade::Snake}}
+Inheritance diagram for Arcade\+::Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArcade_1_1Snake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArcade_1_1Snake_aedfbc531040df840f02a6d5a78aae9ca}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classArcade_1_1Snake}{Snake} object. \end{DoxyCompactList}\item 
+\Hypertarget{classArcade_1_1Snake_ac35346e56aa3052887552c5a5579ff98}\label{classArcade_1_1Snake_ac35346e56aa3052887552c5a5579ff98} 
+{\bfseries $\sim$\+Snake} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{classArcade_1_1Snake}{Snake} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Snake_ab95def2b35320d6c0ef2f76924420725}{init}} (\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$graphics, std\+::string player\+Name) override
+\begin{DoxyCompactList}\small\item\em Initialize the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Snake_a609165f1482aed55cf891faf9882a543}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Snake_ad799cc5f0b8a13e1e9fe79d5a66361aa}{handle\+Input}} (Input input) override
+\begin{DoxyCompactList}\small\item\em Handle the input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Snake_a34243ee8412cf27e981ec0ea83768a19}{render}} () override
+\begin{DoxyCompactList}\small\item\em Render the game. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classArcade_1_1Snake_a52d89c929b7afcb1dcc3d214c3551924}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Name of the player. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classArcade_1_1Snake_a60b674a0c5f3ca2311d8091c31ab5fc6}{get\+Current\+Score}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Current Score of the player. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classArcade_1_1Snake_a34a52f740244a537b04672709dc23827}{get\+High\+Score}} () const override
+\begin{DoxyCompactList}\small\item\em Get the High Score of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Snake_a9cc9db2ffefe6cbdaa1c447efc67bbb7}{set\+State}} (Game\+State state) override
+\begin{DoxyCompactList}\small\item\em Set the State of the game. \end{DoxyCompactList}\item 
+Game\+State \mbox{\hyperlink{classArcade_1_1Snake_a5c377487587400bd40eba0a33cd37c59}{get\+State}} () const override
+\begin{DoxyCompactList}\small\item\em Get the State of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_aec376cd5fd7c6f26c719750f41bd0bb7}{init}} (\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$graphics, std\+::string player\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a11677299835477a508f0012fb659a765}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_ae5c3e1f5329bef82b5945d64cc412969}{handle\+Input}} (Input input)=0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_afaa0981bb80e364717279f5629d8ccca}{render}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGamesModule_a6c290d39074045efa50080c0a9b95c48}{get\+Name}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_a229759676defb274dab0e6c29a30e0ff}{get\+Current\+Score}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{classIGamesModule_ae2a78a4653395b5892f0a785ce8d5ca1}{get\+High\+Score}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIGamesModule_a8baf1b44353550f5d707a599b539ea6e}{set\+State}} (Game\+State state)=0
+\item 
+virtual Game\+State \mbox{\hyperlink{classIGamesModule_a3f0adcbebdc1314041d2c99351fe865c}{get\+State}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f}\label{classIGamesModule_af8b733030ab526616cc8162d2b7ece6f} 
+Game\+State {\bfseries \+\_\+state} = Game\+State\+::\+PAUSED
+\item 
+\Hypertarget{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193}\label{classIGamesModule_a487d7c5b250d0be26dee74c41b9b7193} 
+unsigned int {\bfseries \+\_\+current\+Score}
+\item 
+\Hypertarget{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c}\label{classIGamesModule_aeb745a7608bd9beba20fbf1258cedb6c} 
+unsigned int {\bfseries \+\_\+high\+Score}
+\item 
+\Hypertarget{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652}\label{classIGamesModule_a4f0e2e26b0d0afe0fbbb54faaa4a7652} 
+\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$ {\bfseries \+\_\+graphical}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classArcade_1_1Snake_aedfbc531040df840f02a6d5a78aae9ca}\label{classArcade_1_1Snake_aedfbc531040df840f02a6d5a78aae9ca} 
+\index{Arcade::Snake@{Arcade::Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily Arcade\+::\+Snake\+::\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classArcade_1_1Snake}{Snake} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classArcade_1_1Snake_a60b674a0c5f3ca2311d8091c31ab5fc6}\label{classArcade_1_1Snake_a60b674a0c5f3ca2311d8091c31ab5fc6} 
+\index{Arcade::Snake@{Arcade::Snake}!getCurrentScore@{getCurrentScore}}
+\index{getCurrentScore@{getCurrentScore}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{getCurrentScore()}{getCurrentScore()}}
+{\footnotesize\ttfamily unsigned int Arcade\+::\+Snake\+::get\+Current\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Current Score of the player. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int The current score of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a34a52f740244a537b04672709dc23827}\label{classArcade_1_1Snake_a34a52f740244a537b04672709dc23827} 
+\index{Arcade::Snake@{Arcade::Snake}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{getHighScore()}{getHighScore()}}
+{\footnotesize\ttfamily unsigned int Arcade\+::\+Snake\+::get\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the High Score of the player. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int The high score of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a52d89c929b7afcb1dcc3d214c3551924}\label{classArcade_1_1Snake_a52d89c929b7afcb1dcc3d214c3551924} 
+\index{Arcade::Snake@{Arcade::Snake}!getName@{getName}}
+\index{getName@{getName}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Arcade\+::\+Snake\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the Name of the player. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the player 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a5c377487587400bd40eba0a33cd37c59}\label{classArcade_1_1Snake_a5c377487587400bd40eba0a33cd37c59} 
+\index{Arcade::Snake@{Arcade::Snake}!getState@{getState}}
+\index{getState@{getState}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily Game\+State Arcade\+::\+Snake\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the State of the game. 
+
+\begin{DoxyReturn}{Returns}
+Game\+State The state of the game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_ad799cc5f0b8a13e1e9fe79d5a66361aa}\label{classArcade_1_1Snake_ad799cc5f0b8a13e1e9fe79d5a66361aa} 
+\index{Arcade::Snake@{Arcade::Snake}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily void Arcade\+::\+Snake\+::handle\+Input (\begin{DoxyParamCaption}\item[{Input}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_ab95def2b35320d6c0ef2f76924420725}\label{classArcade_1_1Snake_ab95def2b35320d6c0ef2f76924420725} 
+\index{Arcade::Snake@{Arcade::Snake}!init@{init}}
+\index{init@{init}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Arcade\+::\+Snake\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}} $\ast$}]{graphics,  }\item[{std\+::string}]{player\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics module \\
+\hline
+{\em player\+Name} & The name of the player \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a34243ee8412cf27e981ec0ea83768a19}\label{classArcade_1_1Snake_a34243ee8412cf27e981ec0ea83768a19} 
+\index{Arcade::Snake@{Arcade::Snake}!render@{render}}
+\index{render@{render}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Arcade\+::\+Snake\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Render the game. 
+
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a9cc9db2ffefe6cbdaa1c447efc67bbb7}\label{classArcade_1_1Snake_a9cc9db2ffefe6cbdaa1c447efc67bbb7} 
+\index{Arcade::Snake@{Arcade::Snake}!setState@{setState}}
+\index{setState@{setState}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Arcade\+::\+Snake\+::set\+State (\begin{DoxyParamCaption}\item[{Game\+State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the State of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state of the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game\+State The state of the game 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+\Hypertarget{classArcade_1_1Snake_a609165f1482aed55cf891faf9882a543}\label{classArcade_1_1Snake_a609165f1482aed55cf891faf9882a543} 
+\index{Arcade::Snake@{Arcade::Snake}!update@{update}}
+\index{update@{update}!Arcade::Snake@{Arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Arcade\+::\+Snake\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the game. 
+
+
+
+Implements \mbox{\hyperlink{classIGamesModule}{IGames\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/include/\+Games/\+Snake/Snake.\+hpp\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/src/\+Games/\+Snake/Snake.\+cpp\end{DoxyCompactItemize}

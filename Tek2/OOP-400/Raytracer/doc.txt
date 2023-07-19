@@ -1,0 +1,18 @@
+Using Builder design pattern for parsing the scene file
+and constructing the scene. This pattern allows me to create 
+complex objects step_by_step and provides a clear separation between
+the parsing process and  the scene construction.
+
+#PRIMITIVES : 
+    why "std::optional<Intersection> intersect(xxx)"
+    > using a boolean like in the bootstrap would only yell if an Intersection
+    occurs or not, in raytracing, knowing the point of intersection
+    and other info about it is important for shaing, calculating
+    reflection, and other visual effects.
+    std::optional<Intersection> instead of a boolean,
+    you can provide more information when an intersection occurs.
+    If an intersection is found, you can return an Intersection object
+    with the relevant details (e.g., intersection point, distance, surface normal).
+    If there is no intersection, you can return an empty std::optional.
+    This approach is more flexible and informative compared to
+    just returning a boolean value

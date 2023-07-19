@@ -1,0 +1,269 @@
+\hypertarget{classArcade_1_1Sfml}{}\doxysection{Arcade\+::Sfml Class Reference}
+\label{classArcade_1_1Sfml}\index{Arcade::Sfml@{Arcade::Sfml}}
+Inheritance diagram for Arcade\+::Sfml\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArcade_1_1Sfml}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArcade_1_1Sfml_afc94dd00668abbb70280043877f0ae0d}{Sfml}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classArcade_1_1Sfml}{Sfml} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classArcade_1_1Sfml_ac42cb3dab5b02dc483c5e333718019d5}{$\sim$\+Sfml}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{classArcade_1_1Sfml}{Sfml} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_af5e9412167257b34b758d65148ab3cb9}{create\+Window}} (unsigned int width, unsigned int height, const std\+::string \&title) override
+\begin{DoxyCompactList}\small\item\em Create a Window object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_aeb3120ef000d68f8de3df2daadda1ba8}{destroy\+Window}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the Window object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_a129e7068d4411b9b238c5c52e0b98a33}{clear}} () const override
+\begin{DoxyCompactList}\small\item\em Clear the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_ad8a7e6021a2a3bb87e1cf5800dae8c82}{display}} () const override
+\begin{DoxyCompactList}\small\item\em Display the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_a6adb3cd04d7178902afd5eddd87842ef}{draw\+Rectangle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} pos, \mbox{\hyperlink{structVector2f}{Vector2f}} size, Color color) const override
+\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_aa8b54b4fccf5ca1de43697155adf4d7a}{draw\+Circle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} pos, float radius, Color color) const override
+\begin{DoxyCompactList}\small\item\em Draw a circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_aab0ca119b57ca26ff491079212cf9288}{draw\+Text}} (\mbox{\hyperlink{structVector2f}{Vector2f}} pos, const std\+::string \&text, unsigned int size, Color color) const override
+\begin{DoxyCompactList}\small\item\em Draw a text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArcade_1_1Sfml_ae4250a9041c18afa21145ec326dc4051}{draw\+Sprite}} (\mbox{\hyperlink{structVector2f}{Vector2f}} pos, const std\+::string \&path) const override
+\begin{DoxyCompactList}\small\item\em Draw a sprite. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classArcade_1_1Sfml_a7a13df2f10be1ff2821419ae5d39a35b}{is\+Open}} () const
+\begin{DoxyCompactList}\small\item\em Check if the window is open. \end{DoxyCompactList}\item 
+Input \mbox{\hyperlink{classArcade_1_1Sfml_ae0aac79e4feff37b6d802c3c03ecc139}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Get the Input object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_adbf1dea72f7987bad3a7e6feaedb97a6}{create\+Window}} (unsigned int width, unsigned int height, const std\+::string \&title)=0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ac2f1ec4c02f77d03e50eb509d591e1b8}{destroy\+Window}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ad2572a5cce2065ac2772153b7056a1b7}{clear}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_aaf7ff249d42d931fc286f6624e7dbcc5}{display}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a8f7fec358c99ed35a9118c8a815cd8cc}{draw\+Rectangle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, \mbox{\hyperlink{structVector2f}{Vector2f}} size, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a74f84240da5380d6ba89f30ea29be840}{draw\+Circle}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, float radius, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_ac68ec634c972086ed38ea5a93cebba63}{draw\+Text}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, const std\+::string \&text, unsigned int size, Color color) const =0
+\item 
+virtual void \mbox{\hyperlink{classIDisplayModule_a64d8df255f580396ace29224b4676795}{draw\+Sprite}} (\mbox{\hyperlink{structVector2f}{Vector2f}} position, const std\+::string \&path) const =0
+\item 
+virtual bool \mbox{\hyperlink{classIDisplayModule_a939107266bbb08eb1d84f37914dcada4}{is\+Open}} () const =0
+\item 
+virtual Input \mbox{\hyperlink{classIDisplayModule_a92a6a25a88a8d0d2f5234d092a2cf674}{get\+Input}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classArcade_1_1Sfml_afc94dd00668abbb70280043877f0ae0d}\label{classArcade_1_1Sfml_afc94dd00668abbb70280043877f0ae0d} 
+\index{Arcade::Sfml@{Arcade::Sfml}!Sfml@{Sfml}}
+\index{Sfml@{Sfml}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{Sfml()}{Sfml()}}
+{\footnotesize\ttfamily Arcade\+::\+Sfml\+::\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classArcade_1_1Sfml}{Sfml} object. 
+
+\Hypertarget{classArcade_1_1Sfml_ac42cb3dab5b02dc483c5e333718019d5}\label{classArcade_1_1Sfml_ac42cb3dab5b02dc483c5e333718019d5} 
+\index{Arcade::Sfml@{Arcade::Sfml}!````~Sfml@{$\sim$Sfml}}
+\index{````~Sfml@{$\sim$Sfml}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sfml()}{~Sfml()}}
+{\footnotesize\ttfamily Arcade\+::\+Sfml\+::$\sim$\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \doxylink{classArcade_1_1Sfml}{Sfml} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classArcade_1_1Sfml_a129e7068d4411b9b238c5c52e0b98a33}\label{classArcade_1_1Sfml_a129e7068d4411b9b238c5c52e0b98a33} 
+\index{Arcade::Sfml@{Arcade::Sfml}!clear@{clear}}
+\index{clear@{clear}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clear the window. 
+
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_af5e9412167257b34b758d65148ab3cb9}\label{classArcade_1_1Sfml_af5e9412167257b34b758d65148ab3cb9} 
+\index{Arcade::Sfml@{Arcade::Sfml}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::create\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height,  }\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a Window object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the window \\
+\hline
+{\em height} & Height of the window \\
+\hline
+{\em title} & Title of the window \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_aeb3120ef000d68f8de3df2daadda1ba8}\label{classArcade_1_1Sfml_aeb3120ef000d68f8de3df2daadda1ba8} 
+\index{Arcade::Sfml@{Arcade::Sfml}!destroyWindow@{destroyWindow}}
+\index{destroyWindow@{destroyWindow}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{destroyWindow()}{destroyWindow()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::destroy\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Window object. 
+
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_ad8a7e6021a2a3bb87e1cf5800dae8c82}\label{classArcade_1_1Sfml_ad8a7e6021a2a3bb87e1cf5800dae8c82} 
+\index{Arcade::Sfml@{Arcade::Sfml}!display@{display}}
+\index{display@{display}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the window. 
+
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_aa8b54b4fccf5ca1de43697155adf4d7a}\label{classArcade_1_1Sfml_aa8b54b4fccf5ca1de43697155adf4d7a} 
+\index{Arcade::Sfml@{Arcade::Sfml}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::draw\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{pos,  }\item[{float}]{radius,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the circle \\
+\hline
+{\em radius} & Radius of the circle \\
+\hline
+{\em color} & Color of the circle \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_a6adb3cd04d7178902afd5eddd87842ef}\label{classArcade_1_1Sfml_a6adb3cd04d7178902afd5eddd87842ef} 
+\index{Arcade::Sfml@{Arcade::Sfml}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{pos,  }\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{size,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_ae4250a9041c18afa21145ec326dc4051}\label{classArcade_1_1Sfml_ae4250a9041c18afa21145ec326dc4051} 
+\index{Arcade::Sfml@{Arcade::Sfml}!drawSprite@{drawSprite}}
+\index{drawSprite@{drawSprite}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{drawSprite()}{drawSprite()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::draw\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{pos,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the sprite \\
+\hline
+{\em path} & Path of the sprite \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_aab0ca119b57ca26ff491079212cf9288}\label{classArcade_1_1Sfml_aab0ca119b57ca26ff491079212cf9288} 
+\index{Arcade::Sfml@{Arcade::Sfml}!drawText@{drawText}}
+\index{drawText@{drawText}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void Arcade\+::\+Sfml\+::draw\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2f}{Vector2f}}}]{pos,  }\item[{const std\+::string \&}]{text,  }\item[{unsigned int}]{size,  }\item[{Color}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the text \\
+\hline
+{\em text} & Text to display \\
+\hline
+{\em size} & Size of the text \\
+\hline
+{\em color} & Color of the text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_ae0aac79e4feff37b6d802c3c03ecc139}\label{classArcade_1_1Sfml_ae0aac79e4feff37b6d802c3c03ecc139} 
+\index{Arcade::Sfml@{Arcade::Sfml}!getInput@{getInput}}
+\index{getInput@{getInput}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily Input Arcade\+::\+Sfml\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Input object. 
+
+\begin{DoxyReturn}{Returns}
+Input The input 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+\Hypertarget{classArcade_1_1Sfml_a7a13df2f10be1ff2821419ae5d39a35b}\label{classArcade_1_1Sfml_a7a13df2f10be1ff2821419ae5d39a35b} 
+\index{Arcade::Sfml@{Arcade::Sfml}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Arcade::Sfml@{Arcade::Sfml}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool Arcade\+::\+Sfml\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the window is open. 
+
+\begin{DoxyReturn}{Returns}
+true If the window is open 
+
+false If the window is closed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDisplayModule}{IDisplay\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/include/\+Libs/\+SFML/Sfml.\+hpp\item 
+/home/edgarflc/\+Epitech/\+B-\/\+OOP-\/400-\/\+MPL-\/4-\/1-\/arcade-\/edgar.\+falcou/src/\+Libs/\+SFML/Sfml.\+cpp\end{DoxyCompactItemize}
