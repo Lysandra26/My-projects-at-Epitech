@@ -1,0 +1,5 @@
+coding-style.sh
+.vscode
+*.o
+zappy_gui
+zappy_ai
